@@ -13,9 +13,10 @@ public abstract class Shape2D extends Shape {
         this.p2 = p2;
     }
 
-    public Shape2D(int x1, int y1, int x2, int y2) {
-        p1 = new Point(x1, y1);
-        p2 = new Point(x2, y2);
+    public Shape2D(double x1, double y1, double x2, double y2) {
+        p1 = new Point(x1,y1);
+        p2 = new Point(x2,y2);
+
     }
 
 

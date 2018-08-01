@@ -5,10 +5,12 @@ import Shape.GeometricShape;
 public class Rectangle extends GeometricShape {
 
     private Point p3;
+    private Point p4;
 
-    public Rectangle(Point p1, Point p2, Point p3) {
+    public Rectangle(Point p1, Point p2, Point p3, Point p4) {
         super(p1, p2);
         this.p3 = p3;
+        this.p4 = p4;
     }
 
     public Point getP3() {
@@ -17,5 +19,13 @@ public class Rectangle extends GeometricShape {
 
     public void setP3(Point p3) {
         this.p3 = p3;
+    }
+
+    public Point getP4() {
+        return p4;
+    }
+
+    public void setP4(Point p4) {
+        this.p4 = p4;
     }
 }
