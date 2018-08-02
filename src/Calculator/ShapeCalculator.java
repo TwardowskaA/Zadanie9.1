@@ -14,9 +14,10 @@ public class ShapeCalculator extends LineCalc implements Calc2D, Calc3D {
 
     public double rectangleArea(Rectangle rectangle) {
 
-        Line2D line = new Line2D(rectangle.getP3(),rectangle.getP4());
+        Line2D line = new Line2D(rectangle.getP1(),rectangle.getP2());
         double a = lineLength(line);
-        double b = rectangle.getR();
+        Line2D line1 = new Line2D(rectangle.getP3(),rectangle.getP4());
+        double b = lineLength(line1);
         double result = a * b;
         return result;
     }

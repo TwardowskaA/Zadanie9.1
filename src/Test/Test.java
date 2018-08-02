@@ -26,7 +26,7 @@ public class Test {
         double result2 = shapeCalc.circleArea(circle);
         System.out.printf("\n" +"Pole koła wynosi:" + " " + "%.2f", result2);
 
-        Rectangle rect = new Rectangle(5.5,p3,p4);
+        Rectangle rect = new Rectangle(p1,p2,p3,p4);
         double result3 = shapeCalc.rectangleArea(rect);
         System.out.printf("\n" +"Pole prostokąta wynosi" + " " + "%.2f", result3);
 
