@@ -7,8 +7,9 @@ public class Rectangle extends GeometricShape {
     private Point p3;
     private Point p4;
 
-    public Rectangle(Point p1, Point p2, Point p3, Point p4) {
-        super(p1, p2);
+
+    public Rectangle(double r, Point p3, Point p4) {
+        super(r);
         this.p3 = p3;
         this.p4 = p4;
     }

@@ -4,8 +4,9 @@ import Shape.GeometricShape;
 
 public class Circle extends GeometricShape {
 
-
-    public Circle(Point p1, Point p2) {
-        super(p1, p2);
+    public Circle(double r) {
+        super(r);
     }
+
+
 }

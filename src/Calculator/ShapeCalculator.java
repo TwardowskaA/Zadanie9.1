@@ -7,18 +7,16 @@ public class ShapeCalculator extends LineCalc implements Calc2D, Calc3D {
 
     public double circleArea(Circle circle) {
 
-        Line2D line = new Line2D(circle.getP1(),circle.getP2());
-        double r = (lineLength(line) / 2);
-        return  Math.PI * Math.pow(r, 2);
+        Circle circle1 = new Circle(circle.getR());
+        return  Math.PI * Math.pow(circle1.getR(), 2);
     }
 
 
     public double rectangleArea(Rectangle rectangle) {
 
-        Line2D line = new Line2D(rectangle.getP1(),rectangle.getP2());
+        Line2D line = new Line2D(rectangle.getP3(),rectangle.getP4());
         double a = lineLength(line);
-        line = new Line2D(rectangle.getP3(), rectangle.getP4());
-        double b = lineLength(line);
+        double b = rectangle.getR();
         double result = a * b;
         return result;
     }

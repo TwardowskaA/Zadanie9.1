@@ -7,6 +7,11 @@ public abstract class Shape2D extends Shape {
     private Point p1;
     private Point p2;
 
+    private double r;
+
+    public Shape2D(double r) {
+        this.r = r;
+    }
 
     public Shape2D(Point p1, Point p2) {
         this.p1 = p1;
@@ -36,4 +41,11 @@ public abstract class Shape2D extends Shape {
         this.p2 = p2;
     }
 
+    public double getR() {
+        return r;
+    }
+
+    public void setR(double r) {
+        this.r = r;
+    }
 }

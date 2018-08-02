@@ -8,4 +8,7 @@ public abstract class GeometricShape extends Shape2D {
         super(p1, p2);
     }
 
+    public GeometricShape(double r) {
+        super(r);
+    }
 }
